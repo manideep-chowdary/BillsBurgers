@@ -33,7 +33,7 @@ public class Drink{
         }
 
         public void printDrinksBill(int a){
-                System.out.println(menuDrinks.get(a).getType() + "\t\t" + menuDrinks.get(a).getPrice());
+                System.out.printf("%-20s\t\t%d\n", menuDrinks.get(a).getType(), menuDrinks.get(a).getPrice());
         }
 
         public void setDrinksDetails(int a){

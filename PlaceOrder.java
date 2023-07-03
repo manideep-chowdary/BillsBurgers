@@ -72,17 +72,15 @@ public class PlaceOrder {
         public void printBill(int a, int b, int c){
                 System.out.println();
                 System.out.println();
-                System.out.println(".".repeat(6) + "Bill" + ".".repeat(6));
-                System.out.println("..".repeat(10));
-                System.out.println("Item\t\t\t\t\t\tPrice");
-                System.out.println("--".repeat(10));
+                System.out.println("..".repeat(12) + "Bill" + "..".repeat(12));
+                System.out.println("..".repeat(30));
+                System.out.printf("%-30s%s\n", "Items", "Price");
+                System.out.println("--".repeat(30));
                 burger.printBurgerBill(a);
-                System.out.println("--".repeat(10));
                 drinks.printDrinksBill(b);
-                System.out.println("--".repeat(10));
                 item.printItemsBill(c);
-                System.out.println("..".repeat(10));
-                System.out.println("\t\t\t\t\tPrice:"+ (burger.getPrice(a) + drinks.getPrice(b) + item.getPrice(c)));
+                System.out.println("..".repeat(12));
+                System.out.printf("%-20s%s %d","", "Total Price:" ,(burger.getPrice(a) + drinks.getPrice(b) + item.getPrice(c)));
         }
 
 }

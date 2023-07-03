@@ -41,7 +41,7 @@ public class Burger{
         }
 
         public void printBurgerBill(int a){
-                System.out.println(burgerMenu.get(a).getType() + "\t\t" + burgerMenu.get(a).getPrice());
+                System.out.printf("%-20s\t\t%d\n",burgerMenu.get(a).getType(), burgerMenu.get(a).getPrice());
         }
 
         public int getPrice(int a){

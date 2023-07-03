@@ -25,7 +25,7 @@ public class SideItem {
         }
 
         public void printItemsBill(int a){
-                System.out.println(itemsMenu.get(a).getType() + "\t" + itemsMenu.get(a).getPrice());
+                System.out.printf("%-20s\t\t%d\n",itemsMenu.get(a).getType(),itemsMenu.get(a).getPrice());
         }
 
 
